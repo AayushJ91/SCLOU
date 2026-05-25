@@ -115,10 +115,7 @@ function ZoneFoSSummaryStrip({ zones }: { zones: ZoneReading[] }) {
 
   return (
     <div
-      className="grid w-full gap-1.5"
-      style={{
-        gridTemplateColumns: `repeat(${Math.min(sortedZones.length, TOTAL_CORRIDOR_ZONES) || 1}, minmax(0, 1fr))`,
-      }}
+      className="flex gap-3 overflow-x-auto pb-2 w-full scrollbar-hide"
     >
       {sortedZones.map((zone) => {
         const isCritical = isCriticalMonitoringZone(zone, zones);
@@ -127,7 +124,7 @@ function ZoneFoSSummaryStrip({ zones }: { zones: ZoneReading[] }) {
         return (
           <div
             key={zone.id}
-            className={`min-w-0 rounded border px-1.5 py-2 transition-all ${isCritical ? 'ring-1 ring-[#1e3a5f] ring-offset-1' : ''}`}
+            className={`min-w-[80px] rounded border px-1.5 py-2 transition-all ${isCritical ? 'ring-1 ring-[#1e3a5f] ring-offset-1' : ''}`}
             style={{
               backgroundColor: color.bg,
               borderColor: color.border,
