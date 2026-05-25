@@ -19,8 +19,8 @@ build/
 
 # Node / frontend
 node_modules/
-front-end/dist/
-front-end/.vite/
+frontend/dist/
+frontend/.vite/
 *.tsbuildinfo
 
 # Environment & secrets
