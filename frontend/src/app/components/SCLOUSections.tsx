@@ -518,7 +518,7 @@ export function CorridorOverviewSection({ zones, energy, alerts }: SectionProps)
   const zoneCount = zones.length;
 
   return (
-    <div className="grid h-full min-h-0 gap-6 xl:grid-cols-[minmax(0,1.4fr)_380px]">
+    <div className="grid h-full min-h-0 gap-6 grid-cols-1 lg:grid-cols-[1fr_320px]">
       {/* Left Panel: Dashboard */}
       <div className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-[#e5e7eb] bg-white">
         {/* Header Section */}
@@ -547,7 +547,7 @@ export function CorridorOverviewSection({ zones, energy, alerts }: SectionProps)
             </div>
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-baseline gap-2">
-                <div className="text-5xl font-bold text-[#1e3a5f] tabular-nums">
+                <div className="sm:text-3xl md:text-4xl text-5xl font-bold text-[#1e3a5f] tabular-nums">
                   {foS.toFixed(2)}
                 </div>
                 <div className="text-lg text-[#6b7280]">FoS</div>
@@ -622,7 +622,7 @@ export function CorridorOverviewSection({ zones, energy, alerts }: SectionProps)
       </div>
 
       {/* Right Panel: Telemetry — scrolls independently */}
-      <div className="min-h-0 overflow-y-auto pr-1">
+      <div className="min-h-0 overflow-y-auto max-h-[calc(100vh-120px)] pr-1">
         <SectionCard title="Corridor Telemetry" subtitle="environment + energy">
           <OperationsPanelRefined energy={energy} zones={zones} />
         </SectionCard>

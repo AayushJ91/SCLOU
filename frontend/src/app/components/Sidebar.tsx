@@ -18,7 +18,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
   ];
 
   return (
-    <aside className="w-64 bg-white border-r border-[#e5e7eb] flex flex-col">
+    <aside className="hidden md:flex md:w-64 lg:w-72 bg-white border-r border-[#e5e7eb] flex-col">
       <div className="p-6 border-b border-[#e5e7eb]">
         <div className="flex items-center gap-3 mb-1">
           <div className="w-10 h-10 border-2 border-[#1e3a5f] flex items-center justify-center">

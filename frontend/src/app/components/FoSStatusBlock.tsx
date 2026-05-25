@@ -48,7 +48,7 @@ export function FoSStatusBlock({ zone }: any) {
             </div>
 
             <div className="flex items-baseline gap-3">
-              <div className="text-5xl text-[#1e3a5f] tabular-nums" style={{ fontWeight: 600 }}>
+              <div className="sm:text-3xl md:text-4xl text-5xl text-[#1e3a5f] tabular-nums" style={{ fontWeight: 600 }}>
                 {corridorFoS.toFixed(2)}
               </div>
               <div className="text-lg text-[#64748b]">FoS</div>

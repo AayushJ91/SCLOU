@@ -30,7 +30,7 @@ export default function App() {
         onSectionChange={setActiveSection} 
       />
 
-      <div className="flex-1 flex flex-col overflow-hidden">
+      <div className="flex-1 flex flex-col overflow-hidden max-w-[1400px] mx-auto w-full">
         <Header alerts={alerts} />
 
         <div

@@ -42,12 +42,12 @@ export function Header({ alerts }: HeaderProps) {
           </span>
         </div>
 
-        <div className="flex items-center gap-2 text-[#64748b]">
+        <div className="hidden md:flex items-center gap-2 text-[#64748b]">
           <CloudRain size={16} />
           <span className="text-sm">23°C, Clear</span>
         </div>
 
-        <div className="text-right">
+        <div className="hidden md:block text-right">
           <div className="text-sm text-[#1e3a5f] tabular-nums" style={{ fontWeight: 500 }}>
             {currentTime}
           </div>
